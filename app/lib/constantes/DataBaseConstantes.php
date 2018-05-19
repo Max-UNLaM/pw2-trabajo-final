@@ -6,13 +6,15 @@
  * Time: 21:31
  */
 
-namespace App\lib\constantes;
+namespace App\Lib\Constantes;
 
-include_once '../../../env/acceso.php';
+require_once (__ROOT__ . "/../../env/acceso.php");
 
 
-class DataBaseConstantes {
-	const BASE_NOMBRE = 'gestion-consorcios-backend';
-	const BASE_USER = DB_USER;
-	const BASE_PASSWORD = DB_PASSWORD;
+class DataBaseConstantes
+{
+    const BASE_NOMBRE = 'gestion-consorcios-backend';
+    const BASE_USER = DB_USER;
+    const BASE_PASSWORD = DB_PASSWORD;
+    const BASE_SERVER = DB_SERVER;
 }

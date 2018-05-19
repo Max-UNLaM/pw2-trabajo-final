@@ -94,7 +94,7 @@ Finalmente, solo hace falta añadir el autoload al proyecto:
 ```php
 <?php
 
-    require __DIR__ . '/vendor/autoload.php';
+    require_once __DIR__ . '/vendor/autoload.php';
 
 ?>
 ```
