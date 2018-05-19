@@ -125,7 +125,23 @@ Fabulantástico.
 
 ## Dependencias
 
-Aún no hay. ¿Habrá?
+### PHPUNIT
+
+Es el tester por excelencia de PHP.
+
+#### Instalar
+
+Se instala solo con composer (php ./composer.phar install)
+
+#### Testear
+
+Ejemplo de test:
+
+ ./vendor/bin/phpunit --bootstrap ./vendor/autoload.php ./app/tests/DataBaseConnectorTest
+
+Para testear, basta con extender algún método assert de la clase TestCase, ver app/tests/DataBaseConnectorTest.php como ejemplo.
+
+Los métodos asserts se encuentran en la [documentación](http://phpunit.readthedocs.io/en/7.1/assertions.html)
 
 ## Modelos
 
