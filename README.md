@@ -146,3 +146,25 @@ Los métodos asserts se encuentran en la [documentación](http://phpunit.readthe
 ## Modelos
 
 Espacio para modelos
+
+## Librerías
+
+#### DataBaseConnector
+
+Se encarga de devolver un objeto PDO para para interactuar con la base de datos. 
+
+Ejemplo: 
+
+```php
+
+<?php
+
+    # El método estático obtenerBase recibe el tipo de base de datos a usar.
+    # Para más info: https://secure.php.net/manual/es/pdo.drivers.php
+    
+    use App\Lib\Helpers\DataBaseConnector as DBC;
+    $baseDeDatos = DBC::obtenerBase('mysql');
+
+?>
+
+``` 
