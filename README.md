@@ -31,7 +31,10 @@ php composer.phar install
 ```
 
 #### Configurar acceso a base de datos
+
 Para poder desarrollar dentro de diferentes entornos, añadir la constante USER_DB PASSWORD_DB a env/acceso.php con el usuario y contraseña de tu base de datos respectivamente.
+
+Añadir también el servidor hacia donde se irá a conectar.
 
 La clase DataBaseConnector se encargará del resto.
 
@@ -42,6 +45,7 @@ La clase DataBaseConnector se encargará del resto.
 <?php
     define('DB_USER', 'TuUsuarioQueHabitualmenteEsRoot');
     define ('DB_PASSWORD', 'contraseñadetuusuario');
+    define('DB_SERVER','localhost');
 ?>
 
 ```
