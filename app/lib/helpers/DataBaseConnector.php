@@ -9,6 +9,6 @@
 namespace App\Lib\Helpers;
 
 
-class DataBase {
+class DataBaseConnector {
 
 }
